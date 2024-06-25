@@ -29,8 +29,8 @@ class CustomLLM(LLM):
             seed=1234,
             result_format='message',
             max_tokens=1500,
-            top_p=0.8,
-            temperature=0.85,
+            top_p=0.4,
+            temperature=0.45,
             repetition_penalty=1,
         )
         return response.output.choices[0]['message']['content']
